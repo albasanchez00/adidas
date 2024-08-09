@@ -1,0 +1,108 @@
+/* Estilos Generales */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: Arial;
+}
+
+body {
+    font-size: 16px;
+    text-align: center;
+    width: 100vw;
+}
+
+/*Bloque Menu*/
+.img{
+    width: 10%;
+    text-align: center;
+}
+#mujer,#hombre,#infantil,#calzado{
+    background-color: rgba(169,169,169,0.72);
+    margin: 25px 0;
+    width: 100%;
+    height: 500px;
+}
+
+.menu{
+    background-color: black;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu a, .header a{
+    text-decoration: none;
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+}
+.header a{
+    color: black;
+    text-align: right;
+    padding-right: 25px;
+}
+
+
+
+
+
+
+
+
+
+/*Codigo Login*/
+/*.bloque_Form{*/
+/*    width: 100%;*/
+/*}*/
+
+/*.bloque_log{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*    height: 50px;*/
+/*    padding: 5px;*/
+/*}*/
+
+/*.bloque_log input{*/
+/*    width: 200px;*/
+/*    height: 30px;*/
+/*}*/
+
+/*#botonEnviar, #botonBorrar{*/
+/*    width: 65px;*/
+/*    height: 30px;*/
+/*    background-color: saddlebrown;*/
+/*    color: white;*/
+/*}*/
+
+/*section{*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/*section div{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 500px;*/
+/*    height: 300px;*/
+/*    border: 1px solid black;*/
+/*    background-color: bisque;*/
+/*}*/
+
+
+
