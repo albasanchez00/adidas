@@ -10,17 +10,23 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adidas</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="media/favicon.png">
 </head>
 <body>
-
 <div class="header">
+    <img src="media/logo-adidas.webp" alt="Logo Adidas" class="img">
+
     <a href="login.php"><img src="media/icono-login-blanco.svg" alt="Iniciar Sesión" class="icono"></a>
 
-<a><img src="media/icono-caritto-blanco.svg" alt="Carrito" class="icono"></a>
+    <a><img src="media/icono-caritto-blanco.svg" alt="Carrito" class="icono"></a>
+    <?php
+        if (isset($_SESSION['totalProducto'])) {
+            echo $_SESSION['totalProducto'];
+        }
+    ?>
 </div>
 
 <nav>
-    <img src="media/logo-adidas.webp" alt="Logo Adidas" class="img">
     <!--menu resepctivo-->
     <div class="menu">
         <a href="index.php#mujer">Mujer</a>
