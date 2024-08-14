@@ -9,14 +9,13 @@
 
 body {
     font-size: 16px;
-    text-align: center;
     width: 100vw;
 }
 
 /*Bloque Menu*/
 .img{
-    width: 10%;
-    text-align: center;
+    display: block;
+    width: 130px;
 }
 #mujer,#hombre,#infantil,#calzado{
     background-color: rgba(169,169,169,0.72);
@@ -29,7 +28,7 @@ body {
     background-color: black;
     height: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
@@ -43,14 +42,38 @@ body {
     justify-content: flex-end;
     align-items: center;
     height: 50px;
+    position: absolute;
+    top: 15px;
+    right: 0;
 }
 .header a{
     color: black;
-    text-align: right;
-    padding-right: 25px;
+    text-decoration: none;
 }
 
+.icono{
+    background-color: black;
+    padding: 10px 12px;
+    margin: 15px 15px;
+    border: 0;
+    border-radius: 50%;
+}
 
+/*  Estilo de la Página de Login*/
+.container{
+    width: 40%;
+    padding: 16px;
+    margin: 10% auto;
+}
+input[type="text"], input[type="password"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
 
 
 
