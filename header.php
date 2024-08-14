@@ -12,6 +12,7 @@ session_start();
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <div class="header">
     <a href="login.php"><img src="media/icono-login-blanco.svg" alt="Iniciar Sesión" class="icono"></a>
 
