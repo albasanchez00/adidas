@@ -12,6 +12,10 @@ body {
     width: 100vw;
 }
 
+.textoCentrado{
+    text-align: center;
+}
+
 /*Bloque Menu*/
 .img{
     display: block;
@@ -39,7 +43,7 @@ body {
 }
 .header{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 80px;
 }
@@ -55,13 +59,33 @@ body {
     border: 0;
     border-radius: 50%;
 }
+.fondo{
+    background-color: black;
+    color: white;
+}
+
 
 /*  Estilo de la Página de Login*/
 .container{
-    width: 40%;
+    width: 35%;
     padding: 16px;
     margin: 10% auto;
+    border: 1px solid black;
 }
+#container-inicio{
+    display: flex;
+}
+.formularios{
+    display: block;
+}
+
+.container-2    {
+    width: 35%;
+    padding: 16px;
+    margin: 10% auto;
+    border: 1px solid black;
+}
+
 input[type="text"],input[type="password"]{
     width: 100%;
     padding: 12px 20px;
@@ -132,6 +156,16 @@ form{
     margin-top: 20px;
     background-color: black;
     color: white;
+}
+
+
+/* Mostrar Carrito */
+table{
+    border: 1px solid black;
+}
+td{
+    border-top: 1px solid black;
+    border-right: 1px solid black;
 }
 
 
