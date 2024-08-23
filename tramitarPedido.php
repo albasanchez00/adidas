@@ -30,7 +30,7 @@ include 'header.php';
 
             <p>
                 <label for="direccion">Dirección</label>
-                <input type="text" name="direccion" required>
+                <input type="text" name="direccion" required minlength="10">
             </p>
 
             <p>
