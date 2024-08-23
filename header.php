@@ -16,7 +16,7 @@ session_start();
 <div class="header">
     <img src="media/logo-adidas.webp" alt="Logo Adidas" class="img">
 
-    <div>
+    <div class="iconos-header">
         <?php
         if (isset($_SESSION['usuario'])) {
             echo "<a class='fondo' href='logOut.php'>"."<img src='media/icono-logout-blanco.svg' class='icono'>".$_SESSION['usuario']."</a>";
@@ -26,12 +26,13 @@ session_start();
         <?php
         }?>
 
-        <a href="mostrarCarrito.php"><img src="media/icono-caritto-blanco.svg" alt="Resumen de la Compra" class="icono"></a>
+        <a class="fondo" href="mostrarCarrito.php"><img src="media/icono-caritto-blanco.svg" alt="Resumen de la Compra" class="icono">
         <?php
         if (isset($_SESSION['totalProducto'])) {
             echo $_SESSION['totalProducto'];
         }
         ?>
+        </a>
     </div>
 </div>
 

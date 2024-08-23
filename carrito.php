@@ -47,7 +47,7 @@ function actualizarCesta()
 
 // Vaciar Cesta
 if (isset($_POST["eliminarCarrito"])){
-    unset($_POST["carrito"]); // Elimina el Array -> $_SESSION["carrito"]
+    unset($_SESSION["carrito"]); // Elimina el Array -> $_SESSION["carrito"]
 
     actualizarCesta();
     header('Location: mostrarCarrito.php');
@@ -70,7 +70,7 @@ if (isset($_POST["actualizarCarrito"])){
 if (isset($_POST["eliminarProducto"])){
     $id=$_POST["id"]; //Necesitamos el id para buscarlo y eliminarlo del array
 
-    unset($_POST["carrito"][$id]); // Eliminando un valor del array
+    unset($_SESSION["carrito"][$id]); // Eliminando un valor del array
 
     actualizarCesta();
     header('Location: mostrarCarrito.php');

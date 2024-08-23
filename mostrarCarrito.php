@@ -55,9 +55,9 @@ include 'header.php';
                   </td>
 
                   <td>
-                      <form action="carrito.php" method="post">
+                      <form class="btn-form" action="carrito.php" method="post">
                           <input type="hidden" name="id" value="<?php echo $productoID?>">
-                          <input type="submit" name="eliminarProducto" value="Eliminar">
+                          <input class="btn-eliminar" type="submit" name="eliminarProducto" value="Eliminar">
                       </form>
                   </td>
 
@@ -75,14 +75,17 @@ include 'header.php';
                       <?php echo $total?>€
                   </td>
                   <td>
-                      <form action="carrito.php" method="post">
-                          <input type="submit" name="eliminarCarrito" value="Vaciar Cesta">
+                      <form class="btn-form" action="carrito.php" method="post">
+                          <input class="btn-eliminar" type="submit" name="eliminarCarrito" value="Vaciar Cesta">
                       </form>
                   </td>
               </tr>
           </table>
+          <div>
+              <a class="btn-carrito" href="mostrarCarrito.php">Volver</a>
+              <a class="btn-carrito" href="tramitarPedido.php">Tramitar Pedido</a>
+          </div>
 
-          <a href="tramitarPedido.php">Tramitar Pedido</a>
 
     <?php
         }else{
@@ -90,6 +93,13 @@ include 'header.php';
         }
     ?>
 </div>
+<div>
+    <?php
+        if (isset($_GET['mensaje'])) {
+            echo $_GET['mensaje'];
 
+        }
+        ?>
+</div>
 </body>
 </html>
